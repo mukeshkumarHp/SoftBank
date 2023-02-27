@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="CQRS\**" />
+    <Compile Remove="Domains\AccountDomain\**" />
+    <Compile Remove="Domains\UserDomain\**" />
+    <Compile Remove="IoC\**" />
+    <EmbeddedResource Remove="CQRS\**" />
+    <EmbeddedResource Remove="Domains\AccountDomain\**" />
+    <EmbeddedResource Remove="Domains\UserDomain\**" />
+    <EmbeddedResource Remove="IoC\**" />
+    <None Remove="CQRS\**" />
+    <None Remove="Domains\AccountDomain\**" />
+    <None Remove="Domains\UserDomain\**" />
+    <None Remove="IoC\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Program.cs" />
+    <Compile Remove="Services\JWTTokenService.cs" />
+    <Compile Remove="Startup.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="5.2.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.6" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.6.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SoftBank.Entities\SoftBank.Entities.csproj" />
+  </ItemGroup>
+
+</Project>
