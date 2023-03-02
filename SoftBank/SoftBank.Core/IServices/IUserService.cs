@@ -4,9 +4,9 @@ using SoftBankApp.Repositories;
 
 namespace SoftBank.Core
 {
-    public interface IUserService : IGenericRepository<Users>
+    public interface IUserService 
     {
         Users Validate(AuthenticateRequest login);
-        Users GetUserById(int id);
+        Users GetById(int userId);
     }
 }

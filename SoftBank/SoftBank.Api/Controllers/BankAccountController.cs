@@ -23,7 +23,7 @@ namespace SoftBankApp.Api.Controllers
         [HttpPost("{userId}/Accounts")]
         public IActionResult GetAccountsForUser(int userId)
         {
-            var user = _userService.GetById(userId);
+            var user = _moneyTransferService.GetAccountForUser(userId);
             return Ok(user);
         }
 

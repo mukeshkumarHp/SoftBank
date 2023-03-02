@@ -23,7 +23,7 @@ namespace SoftBankApp.Api.Controllers
         {
             try
             {
-                var userDetailsQuery = _userService.GetUserById(UserId);
+                var userDetailsQuery = _userService.GetById(UserId);
                 return Ok(userDetailsQuery);
             }
             catch (Exception ex)

@@ -11,7 +11,7 @@
       },
       "distributionName": ""
     },
-    "DemoBank.Api": {
+    "SoftBank.Api": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "swagger",
